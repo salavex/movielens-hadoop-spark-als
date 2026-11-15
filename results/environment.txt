@@ -1,0 +1,14 @@
+[2J[HCOURSE PROJECT - HDFS ENVIRONMENT CHECK
+2026-11-14T17:14:25+08:00
+
+Hadoop 3.3.6
+Configured Capacity: 105036840960 (97.82 GB)
+Present Capacity: 61944150208 (57.69 GB)
+DFS Remaining: 61916422144 (57.66 GB)
+DFS Used: 27728064 (26.44 MB)
+DFS Used%: 0.04%
+Live datanodes (2):
+
+Found 2 items
+-rw-r--r--   2 root supergroup     494431 2026-11-14 09:13 /course-movie/raw/movies.csv
+-rw-r--r--   2 root supergroup    2483723 2026-11-14 09:13 /course-movie/raw/ratings.csv

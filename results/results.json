@@ -1,0 +1,417 @@
+{
+  "created_at_utc": "2026-11-14T09:21:14.187643+00:00",
+  "spark_version": "3.5.7",
+  "master": "local[2]",
+  "application_id": "local-1794648027524",
+  "dataset_url": "https://files.grouplens.org/datasets/movielens/ml-latest-small.zip",
+  "seed": 42,
+  "split_ratio": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "split_method": "pmod(xxhash64(userId,movieId,42),100)",
+  "split_counts": {
+    "train": 80415,
+    "validation": 10202,
+    "test": 10219
+  },
+  "data": {
+    "raw_ratings": 100836,
+    "valid_before_dedup": 100836,
+    "clean_ratings": 100836,
+    "invalid_rows": 0,
+    "removed_total": 0,
+    "users": 610,
+    "catalog_movies": 9742,
+    "rated_movies": 9724,
+    "mean_rating": 3.501556983616962,
+    "min_timestamp": 828124615,
+    "max_timestamp": 1537799250
+  },
+  "rating_distribution": [
+    {
+      "rating": 0.5,
+      "count": 1370
+    },
+    {
+      "rating": 1.0,
+      "count": 2811
+    },
+    {
+      "rating": 1.5,
+      "count": 1791
+    },
+    {
+      "rating": 2.0,
+      "count": 7551
+    },
+    {
+      "rating": 2.5,
+      "count": 5550
+    },
+    {
+      "rating": 3.0,
+      "count": 20047
+    },
+    {
+      "rating": 3.5,
+      "count": 13136
+    },
+    {
+      "rating": 4.0,
+      "count": 26818
+    },
+    {
+      "rating": 4.5,
+      "count": 8551
+    },
+    {
+      "rating": 5.0,
+      "count": 13211
+    }
+  ],
+  "popular_movies": [
+    {
+      "movieId": 356,
+      "rating_count": 329,
+      "mean_rating": 4.164133738601824,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War"
+    },
+    {
+      "movieId": 318,
+      "rating_count": 317,
+      "mean_rating": 4.429022082018927,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama"
+    },
+    {
+      "movieId": 296,
+      "rating_count": 307,
+      "mean_rating": 4.197068403908795,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller"
+    },
+    {
+      "movieId": 593,
+      "rating_count": 279,
+      "mean_rating": 4.161290322580645,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller"
+    },
+    {
+      "movieId": 2571,
+      "rating_count": 278,
+      "mean_rating": 4.192446043165468,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller"
+    },
+    {
+      "movieId": 260,
+      "rating_count": 251,
+      "mean_rating": 4.231075697211155,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi"
+    },
+    {
+      "movieId": 480,
+      "rating_count": 238,
+      "mean_rating": 3.75,
+      "title": "Jurassic Park (1993)",
+      "genres": "Action|Adventure|Sci-Fi|Thriller"
+    },
+    {
+      "movieId": 110,
+      "rating_count": 237,
+      "mean_rating": 4.031645569620253,
+      "title": "Braveheart (1995)",
+      "genres": "Action|Drama|War"
+    },
+    {
+      "movieId": 589,
+      "rating_count": 224,
+      "mean_rating": 3.970982142857143,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "genres": "Action|Sci-Fi"
+    },
+    {
+      "movieId": 527,
+      "rating_count": 220,
+      "mean_rating": 4.225,
+      "title": "Schindler's List (1993)",
+      "genres": "Drama|War"
+    }
+  ],
+  "validation_experiments": [
+    {
+      "rmse": 0.8811514352670407,
+      "mae": 0.6773813737776144,
+      "predicted_rows": 9796,
+      "total_rows": 10202,
+      "coverage": 0.9602038815918448,
+      "rank": 10,
+      "regParam": 0.1,
+      "maxIter": 10,
+      "fit_seconds": 5.422461086999988
+    },
+    {
+      "rmse": 0.873109339694839,
+      "mae": 0.6795049411038955,
+      "predicted_rows": 9796,
+      "total_rows": 10202,
+      "coverage": 0.9602038815918448,
+      "rank": 20,
+      "regParam": 0.15,
+      "maxIter": 10,
+      "fit_seconds": 2.897483889
+    }
+  ],
+  "selected_index": 1,
+  "test_metrics": {
+    "rmse": 0.8811947984387719,
+    "mae": 0.6845795863977397,
+    "predicted_rows": 9863,
+    "total_rows": 10219,
+    "coverage": 0.9651629317937176,
+    "model": "ALS",
+    "rank": 20,
+    "regParam": 0.15
+  },
+  "baseline_metrics": {
+    "rmse": 1.0355630374637181,
+    "mae": 0.8216575112366538,
+    "predicted_rows": 9863,
+    "total_rows": 10219,
+    "coverage": 0.9651629317937176,
+    "model": "Training mean",
+    "training_mean": 3.500024870981782
+  },
+  "recommendations": [
+    {
+      "userId": 1,
+      "position": 1,
+      "movieId": 1250,
+      "title": "Bridge on the River Kwai, The (1957)",
+      "genres": "Adventure|Drama|War",
+      "prediction": 5.102146625518799
+    },
+    {
+      "userId": 1,
+      "position": 2,
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "prediction": 5.085483074188232
+    },
+    {
+      "userId": 1,
+      "position": 3,
+      "movieId": 1203,
+      "title": "12 Angry Men (1957)",
+      "genres": "Drama",
+      "prediction": 4.940267562866211
+    },
+    {
+      "userId": 1,
+      "position": 4,
+      "movieId": 1223,
+      "title": "Grand Day Out with Wallace and Gromit, A (1989)",
+      "genres": "Adventure|Animation|Children|Comedy|Sci-Fi",
+      "prediction": 4.904129505157471
+    },
+    {
+      "userId": 1,
+      "position": 5,
+      "movieId": 148626,
+      "title": "Big Short, The (2015)",
+      "genres": "Drama",
+      "prediction": 4.874167442321777
+    },
+    {
+      "userId": 1,
+      "position": 6,
+      "movieId": 1262,
+      "title": "Great Escape, The (1963)",
+      "genres": "Action|Adventure|Drama|War",
+      "prediction": 4.873058319091797
+    },
+    {
+      "userId": 1,
+      "position": 7,
+      "movieId": 6711,
+      "title": "Lost in Translation (2003)",
+      "genres": "Comedy|Drama|Romance",
+      "prediction": 4.8545660972595215
+    },
+    {
+      "userId": 1,
+      "position": 8,
+      "movieId": 7361,
+      "title": "Eternal Sunshine of the Spotless Mind (2004)",
+      "genres": "Drama|Romance|Sci-Fi",
+      "prediction": 4.848381996154785
+    },
+    {
+      "userId": 1,
+      "position": 9,
+      "movieId": 922,
+      "title": "Sunset Blvd. (a.k.a. Sunset Boulevard) (1950)",
+      "genres": "Drama|Film-Noir|Romance",
+      "prediction": 4.837991237640381
+    },
+    {
+      "userId": 1,
+      "position": 10,
+      "movieId": 720,
+      "title": "Wallace & Gromit: The Best of Aardman Animation (1996)",
+      "genres": "Adventure|Animation|Comedy",
+      "prediction": 4.8341064453125
+    },
+    {
+      "userId": 414,
+      "position": 1,
+      "movieId": 246,
+      "title": "Hoop Dreams (1994)",
+      "genres": "Documentary",
+      "prediction": 4.266700267791748
+    },
+    {
+      "userId": 414,
+      "position": 2,
+      "movieId": 1287,
+      "title": "Ben-Hur (1959)",
+      "genres": "Action|Adventure|Drama",
+      "prediction": 4.254046440124512
+    },
+    {
+      "userId": 414,
+      "position": 3,
+      "movieId": 898,
+      "title": "Philadelphia Story, The (1940)",
+      "genres": "Comedy|Drama|Romance",
+      "prediction": 4.240279197692871
+    },
+    {
+      "userId": 414,
+      "position": 4,
+      "movieId": 2324,
+      "title": "Life Is Beautiful (La Vita è bella) (1997)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.224618911743164
+    },
+    {
+      "userId": 414,
+      "position": 5,
+      "movieId": 1203,
+      "title": "12 Angry Men (1957)",
+      "genres": "Drama",
+      "prediction": 4.190883636474609
+    },
+    {
+      "userId": 414,
+      "position": 6,
+      "movieId": 922,
+      "title": "Sunset Blvd. (a.k.a. Sunset Boulevard) (1950)",
+      "genres": "Drama|Film-Noir|Romance",
+      "prediction": 4.185344696044922
+    },
+    {
+      "userId": 414,
+      "position": 7,
+      "movieId": 926,
+      "title": "All About Eve (1950)",
+      "genres": "Drama",
+      "prediction": 4.1520891189575195
+    },
+    {
+      "userId": 414,
+      "position": 8,
+      "movieId": 44555,
+      "title": "Lives of Others, The (Das leben der Anderen) (2006)",
+      "genres": "Drama|Romance|Thriller",
+      "prediction": 4.094815731048584
+    },
+    {
+      "userId": 414,
+      "position": 9,
+      "movieId": 1258,
+      "title": "Shining, The (1980)",
+      "genres": "Horror",
+      "prediction": 4.0459675788879395
+    },
+    {
+      "userId": 414,
+      "position": 10,
+      "movieId": 92259,
+      "title": "Intouchables (2011)",
+      "genres": "Comedy|Drama",
+      "prediction": 4.042649269104004
+    }
+  ],
+  "histories": {
+    "1": [
+      {
+        "title": "Tombstone (1993)",
+        "genres": "Action|Drama|Western",
+        "rating": 5.0
+      },
+      {
+        "title": "Canadian Bacon (1995)",
+        "genres": "Comedy|War",
+        "rating": 5.0
+      },
+      {
+        "title": "Pink Floyd: The Wall (1982)",
+        "genres": "Drama|Musical",
+        "rating": 5.0
+      },
+      {
+        "title": "Messenger: The Story of Joan of Arc, The (1999)",
+        "genres": "Drama|War",
+        "rating": 5.0
+      },
+      {
+        "title": "Good Morning, Vietnam (1987)",
+        "genres": "Comedy|Drama|War",
+        "rating": 5.0
+      }
+    ],
+    "414": [
+      {
+        "title": "Secret Life of Walter Mitty, The (2013)",
+        "genres": "Adventure|Comedy|Drama",
+        "rating": 5.0
+      },
+      {
+        "title": "Seven Samurai (Shichinin no samurai) (1954)",
+        "genres": "Action|Adventure|Drama",
+        "rating": 5.0
+      },
+      {
+        "title": "Band of Brothers (2001)",
+        "genres": "Action|Drama|War",
+        "rating": 5.0
+      },
+      {
+        "title": "The Revenant (2015)",
+        "genres": "Adventure|Drama",
+        "rating": 5.0
+      },
+      {
+        "title": "Brooklyn (2015)",
+        "genres": "Drama|Romance",
+        "rating": 5.0
+      }
+    ]
+  },
+  "candidate_min_train_ratings": 20,
+  "candidate_movies": 1051,
+  "checks": {
+    "no_seen_recommendations": true,
+    "two_complete_top10": true,
+    "split_row_count": true,
+    "split_no_overlap": true
+  },
+  "elapsed_seconds": 46.73989434800001
+}

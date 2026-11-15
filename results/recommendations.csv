@@ -1,0 +1,21 @@
+userId,position,movieId,title,genres,prediction
+1,1,1250,"Bridge on the River Kwai, The (1957)",Adventure|Drama|War,5.102146625518799
+1,2,318,"Shawshank Redemption, The (1994)",Crime|Drama,5.085483074188232
+1,3,1203,12 Angry Men (1957),Drama,4.940267562866211
+1,4,1223,"Grand Day Out with Wallace and Gromit, A (1989)",Adventure|Animation|Children|Comedy|Sci-Fi,4.904129505157471
+1,5,148626,"Big Short, The (2015)",Drama,4.874167442321777
+1,6,1262,"Great Escape, The (1963)",Action|Adventure|Drama|War,4.873058319091797
+1,7,6711,Lost in Translation (2003),Comedy|Drama|Romance,4.8545660972595215
+1,8,7361,Eternal Sunshine of the Spotless Mind (2004),Drama|Romance|Sci-Fi,4.848381996154785
+1,9,922,Sunset Blvd. (a.k.a. Sunset Boulevard) (1950),Drama|Film-Noir|Romance,4.837991237640381
+1,10,720,Wallace & Gromit: The Best of Aardman Animation (1996),Adventure|Animation|Comedy,4.8341064453125
+414,1,246,Hoop Dreams (1994),Documentary,4.266700267791748
+414,2,1287,Ben-Hur (1959),Action|Adventure|Drama,4.254046440124512
+414,3,898,"Philadelphia Story, The (1940)",Comedy|Drama|Romance,4.240279197692871
+414,4,2324,Life Is Beautiful (La Vita è bella) (1997),Comedy|Drama|Romance|War,4.224618911743164
+414,5,1203,12 Angry Men (1957),Drama,4.190883636474609
+414,6,922,Sunset Blvd. (a.k.a. Sunset Boulevard) (1950),Drama|Film-Noir|Romance,4.185344696044922
+414,7,926,All About Eve (1950),Drama,4.1520891189575195
+414,8,44555,"Lives of Others, The (Das leben der Anderen) (2006)",Drama|Romance|Thriller,4.094815731048584
+414,9,1258,"Shining, The (1980)",Horror,4.0459675788879395
+414,10,92259,Intouchables (2011),Comedy|Drama,4.042649269104004

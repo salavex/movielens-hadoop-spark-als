@@ -1,0 +1,18 @@
+[2J[HMOVIELENS / SPARK MLLIB - METRICS
+Captured: 2026-11-14T17:21:43
+Application: local-1794648027524 Spark: 3.5.7 Master: local[2]
+
+Fixed hash split (80/10/10), seed=42; no user/movie pair overlap
+Train: 80415  Validation: 10202  Test: 10219
+
+Validation set (select parameters by RMSE):
+rank   regParam    RMSE       MAE        coverage    fit_seconds
+  10       0.10    0.881151   0.677381   96.02%      5.42
+  20       0.15    0.873109   0.679505   96.02%      2.90
+
+Independent test set (same eligible rows for ALS and baseline):
+ALS            RMSE=0.881195  MAE=0.684580  rows=9863/10219
+Mean baseline  RMSE=1.035563  MAE=0.821658  rows=9863/10219
+Cold-start rows excluded: 356
+Checks: no_seen_recommendations=True, two_complete_top10=True, split_row_count=True, split_no_overlap=True
+Pipeline elapsed seconds: 46.74
